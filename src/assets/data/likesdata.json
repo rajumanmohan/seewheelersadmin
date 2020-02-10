@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Jhon",
+    "dimension": "Green Commute",
+    "group": "Group 1",
+    "date": "2019-08-12"
+  },{
+    "name": "Peter",
+    "dimension": "Recycling",
+    "group": "Group 2",
+    "date": "2019-08-14"
+  },{
+    "name": "Anna",
+   "dimension": "Green Commute",
+    "group": "Group 5",
+    "date": "2019-08-12"
+  },{
+    "name": "Smith",
+    "dimension": "Equality",
+    "group": "Group 8",
+    "date": "2019-08-26"
+  }
+]

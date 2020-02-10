@@ -1,0 +1,71 @@
+{
+"fbusers":1000,
+"twitterusers":1000,
+"linkedinusers":1000,
+"gplususers":1000,
+"claps":100000,
+"thoughts":978999,
+"comments":89889,
+"shares":9182,
+"groups":5000,
+"campaigns":199,
+"channels":1900,
+"jobs":678,
+"users":40000,
+"totalactivity":17000000,
+"dimensions":[{
+"name":"Green Commute",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Grow Green",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Health & Wellness",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Production & Consumption",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Plastcless Living",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Recycling",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Careers & Knowledge",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Equality",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+},{
+"name":"Wildlife & Pets",
+"likes":5000,
+"comments":1000,
+"shares":620,
+"total":6620
+}]
+}

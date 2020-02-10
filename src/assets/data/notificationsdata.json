@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Channel1",
+    "notification": "Notification 1",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel2",
+    "notification": "notification 2",
+    "date": "2019-08-14"
+  },{
+    "name": "Channel3",
+   "notification": "notification",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel4",
+    "notification": "Equality",
+    "date": "2019-08-26"
+  },{
+    "name": "Channel1",
+    "notification": "Green Commute",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel2",
+    "notification": "Recycling",
+    "date": "2019-08-14"
+  },{
+    "name": "Channel3",
+   "notification": "Green Commute",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel4",
+    "notification": "Equality",
+    "date": "2019-08-26"
+  },{
+    "name": "Channel1",
+    "notification": "Green Commute",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel2",
+    "notification": "Recycling",
+    "date": "2019-08-14"
+  },{
+    "name": "Channel3",
+   "notification": "Green Commute",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel4",
+    "notification": "Equality",
+    "date": "2019-08-26"
+  },{
+    "name": "Channel1",
+    "notification": "Green Commute",
+    "date": "2019-08-12"
+  },{
+    "name": "Channel2",
+    "notification": "Recycling",
+    "date": "2019-08-14"
+  }
+]

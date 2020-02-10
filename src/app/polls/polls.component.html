@@ -1,0 +1,93 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Polls'">
+      <span class="m-b-20"></span>
+      <div class="dt-responsive">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-sm-12 col-md-2">
+            <div>
+              <label class="label-control">Show
+                <select class="form-control input-sm full-data-show-entry" [(ngModel)]="rowsOnPage">
+                  <option [ngValue]="10">10</option>
+                  <option [ngValue]="25">25</option>
+                  <option [ngValue]="50">50</option>
+                  <option [ngValue]="100">100</option>
+                </select>
+                entries
+              </label>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <app-filter [page]="'polls'"></app-filter>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <div style="text-align: right;">
+              <label>Search:
+                <input type="search" [(ngModel)]="filterQuery" class="form-control input-sm full-data-search"
+                  placeholder="Search name">
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="panel-heading">User information</div>-->
+        <div class="table-responsive">
+          <table datatable class="table table-striped table-bordered full-data-table"
+            [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage"
+            [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
+            <thead>
+              <tr>
+                <th>
+                  <mfDefaultSorter by="name">Name</mfDefaultSorter>
+                </th>
+                <th>
+                  <mfDefaultSorter by="dimension">Dimension</mfDefaultSorter>
+                </th>
+                <th>
+                  <mfDefaultSorter by="subscribers">Poll Title</mfDefaultSorter>
+                </th>
+                <th>
+                  Votes
+                </th>
+                <th>
+                  <mfDefaultSorter by="subscribers">Participants</mfDefaultSorter>
+                </th>
+                <th>
+                  <mfDefaultSorter by="date">Date & Time</mfDefaultSorter>
+                </th>
+              </tr>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of mf.data">
+                <td>{{item.name}}</td>
+                <td>{{item.dimension}}</td>
+                <td>{{item.title}}</td>
+                <td>
+                  <div *ngFor="let opt of item.options">{{opt.name}} <span class="label label-primary"
+                      style="float:right">{{opt.votes}}</span></div>
+                </td>
+                <td>{{item.participants}}</td>
+                <td>{{getDateString(item.date)}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Dimension</th>
+                <th>Poll Title</th>
+                <th>Participants</th>
+                <th>Date & Time</th>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <mfBootstrapPaginator class="pagination-main f-right"></mfBootstrapPaginator>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </app-card>
+  </div>
+</div>

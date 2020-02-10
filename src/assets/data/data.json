@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Jhon",
+    "gender": "male",
+    "nationality": "USA",
+    "age": 61,
+    "active": 20
+  },{
+    "name": "Peter",
+    "gender": "male",
+    "nationality": "UK",
+    "age": 40,
+    "active": 200
+  },{
+    "name": "Anna",
+    "gender": "female",
+    "nationality": "Germany",
+    "age": 25,
+    "active": 300
+  },{
+    "name": "Smith",
+    "gender": "male",
+    "nationality": "USA",
+    "age": 20,
+    "active": 50
+  }
+]

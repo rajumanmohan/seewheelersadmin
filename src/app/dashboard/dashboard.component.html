@@ -1,0 +1,247 @@
+<div class="row">
+  <div class="col-md-6 col-xl-3">
+    <div class="card social-widget-card">
+      <div class="card-block-big bg-facebook">
+        <h3>{{data?.facebookUsers || 0}}</h3>
+        <span class="m-t-10">Facebook Users</span>
+        <i class="icofont icofont-social-facebook"></i>
+      </div>
+    </div>
+    <!-- campdata: 26
+    commentdata: 329
+    groupdata: 74
+    insitedata: 174
+    likesdata: 2283 -->
+  </div>
+  <div class="col-md-6 col-xl-3">
+    <div class="card social-widget-card">
+      <div class="card-block-big bg-twitter">
+        <h3>{{data?.twitterUsers || 0}}</h3>
+        <span class="m-t-10">Twitter Users</span>
+        <i class="icofont icofont-social-twitter"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-xl-3">
+    <div class="card social-widget-card">
+      <div class="card-block-big bg-linkein">
+        <h3>{{data?.linkedinUsers || 0}}</h3>
+        <span class="m-t-10">LinkedIn Users</span>
+        <i class="icofont icofont-brand-linkedin"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-xl-3">
+    <div class="card social-widget-card">
+      <div class="card-block-big bg-google-plus">
+        <h3>{{data?.googleUsers || 0}}</h3>
+        <span class="m-t-10">Google+ Users</span>
+        <i class="icofont icofont-social-google-plus"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 col-xl-4">
+    <!-- table card start -->
+    <div class="card table-card">
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-6 card-block-big br" [routerLink]="['/','claps']">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-like text-success"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>{{activeCount?.likesdata || 0}}</h5>
+                <span>Likes</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 card-block-big" [routerLink]="['/','thoughts']">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-light-bulb text-danger"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>{{activeCount?.insitedata || 0}}</h5>
+                <span>Insights</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-12 card-block-big br" [routerLink]="['/','comments']">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-comment text-info"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>{{activeCount?.commentdata || 0}}</h5>
+                <span>Comments</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-sm-6 card-block-big" [routerLink]="['/','shares']">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-share-alt text-warning"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>{{data.shares}}</h5>
+                <span>Shares</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- table card end -->
+
+    <!-- campdata: 26
+commentdata: 329
+groupdata: 74
+insitedata: 174
+likesdata: 2283 -->
+  </div>
+  <div class="col-md-12 col-xl-4">
+    <div class="card table-card">
+      <div class="row-table">
+        <div class="col-sm-6 card-block-big br" [routerLink]="['/','groups']">
+          <div class="row">
+            <div class="col-sm-4">
+              <div style="height:40px;width:40px;">
+                <i class="icofont icofont-group text-primary"></i>
+              </div>
+            </div>
+            <div class="col-sm-8 text-center">
+              <h5>{{activeCount?.groupdata || 0}}</h5>
+              <span>Groups</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 card-block-big" [routerLink]="['/','campaigns']">
+          <div class="row ">
+            <div class="col-sm-4">
+              <i class="icofont icofont-network text-primary"></i>
+            </div>
+            <div class="col-sm-8 text-center">
+              <h5>{{activeCount?.campdata || 0}}</h5>
+              <span>Campaigns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-table">
+        <div class="col-sm-6 card-block-big br" [routerLink]="['/','channels']">
+          <div class="row ">
+            <div class="col-sm-4">
+              <div style="height:40px;width:40px;">
+                <i class="icofont icofont-ui-video-play text-primary"></i>
+              </div>
+            </div>
+            <div class="col-sm-8 text-center">
+              <h5>{{activeCount?.channeldata || 0}}</h5>
+              <span>Channels</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 card-block-big" [routerLink]="['/','jobs']">
+          <div class="row ">
+            <div class="col-sm-4">
+              <i class="icofont icofont-ui-office text-primary"></i>
+            </div>
+            <div class="col-sm-8 text-center">
+              <h5>{{activeCount?.jobsdata || 0}}</h5>
+              <span>Jobs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 col-xl-4">
+    <!-- widget primary card start -->
+    <div class="card table-card widget-primary-card">
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-3 card-block-big">
+            <i class="icofont icofont-users"></i>
+          </div>
+          <div class="col-sm-9">
+            <h4>{{data?.registeredUsers || 0}}</h4>
+            <h6>Registered Users</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- widget primary card end -->
+    <!-- widget-success-card start -->
+    <div class="card table-card widget-success-card">
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-3 card-block-big">
+            <i class="icofont icofont-trophy-alt"></i>
+          </div>
+          <div class="col-sm-9">
+            <h4>{{data.totalactivity}}</h4>
+            <h6>Total Activities</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- widget-success-card end -->
+  </div>
+  <div class="col-lg-6">
+
+    <div class="card">
+      <div class="card-header">
+        <app-filter [page]="'activitygraph'"></app-filter>
+      </div>
+      <div class="card-block">
+        <div id="morris-extra-area" style="width:100%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-block">
+        <!-- <app-horizontal-timeline [timelineElements]="timeline" [showContent]="true"></app-horizontal-timeline> -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr class="text-capitalize">
+                <th>Dimension</th>
+                <th>Likes</th>
+                <th>Insights</th>
+                <th>Comments</th>
+                <th>Total</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <!-- categoryName: "Green Commute"
+                commentscount: 15
+                insitecount: 7
+                likescount: 8
+                name: "GreenCommute"
+                totalcount: 30 -->
+              <tr *ngFor="let dm of getData">
+                <td>{{dm.name}}</td>
+                <td>{{dm.likescount}}</td>
+                <td>{{dm.insitecount}}</td>
+                <td>{{dm.commentscount}}</td>
+                <td>{{dm.totalcount}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-5 col-sm-12">
+    <label>Filters:
+      <select class="form-control input-sm full-data-search" [(ngModel)]="selectedFilter" (change)="changeFilter()">
+        <option value="today">Today</option>
+        <option value="week">This Week</option>
+        <option value="month">This Month</option>
+        <option value="custom">Custom</option>
+      </select></label>
+  </div>
+
+  <div class="col-md-7 col-sm-12" *ngIf="!hidedimension">
+    <label>Dimensions:
+      <select class="form-control input-sm full-data-search" [(ngModel)]="selectedDimension" (change)="evaluate()">
+        <option>SEE</option>
+        <option>Green Commute</option>
+        <option>Grow Green</option>
+        <option>Health & Wellness</option>
+        <option>Production & Consumption</option>
+        <option>Plasticless Living</option>
+        <option>Recycling</option>
+        <option>Careers & Knowledge</option>
+        <option>Equality</option>
+        <option>Wildlife & Pets</option>
+      </select></label>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="row" *ngIf="showCustomForm">
+  <div class="col-sm-5">
+    <label>Start Date:</label>
+    <input type="date" class="form-control input-sm full-data-search" [(ngModel)]="start" placeholder="Start">
+  </div>
+  <div class="col-sm-5">
+    <label>End Date:
+      <input type="date" class="form-control input-sm full-data-search" [(ngModel)]="end" placeholder="End"></label>
+  </div>
+  <div class="col-sm-2" style="padding-left:0px;">
+    <button class="btn btn-primary btn-sm" (click)="submitCustomData()">Go</button>
+  </div>
+</div>

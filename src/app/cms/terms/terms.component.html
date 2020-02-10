@@ -1,0 +1,13 @@
+<div class="row-fluid">
+    <div class="col-sm-12">
+        <div class="alert alert-success" *ngIf="isSuccess"><i class="icofont icofont-check-circled"></i>Updated Successfully</div>
+        <div class="alert alert-danger" *ngIf="isError"><i class="icofont icofont-error"></i>Something went wrong, Please try again.</div>
+      </div>
+  <div class="col-sm-12">
+    <textarea class="form-control" rows="25" [(ngModel)]="termsText" (ngModelChange)="textChange()"></textarea>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-sm-12" style="text-align:center;margin-top:10px;">
+    <button class="btn btn-primary" (click)="submit()" [disabled]="!changed">Submit</button>
+  </div>
+</div>

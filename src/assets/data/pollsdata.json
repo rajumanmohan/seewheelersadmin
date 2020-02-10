@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Channel1",
+    "dimension": "Green Commute",	
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1",
+"options":[{"name":"Option1","votes":300},{"name":"Option2","votes":119},{"name":"Option3","votes":200},{"name":"Option4","votes":500}]
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 2"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 3"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 4"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 5"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26",
+"title":"poll 1"
+},{
+    "name": "Channel1",
+    "dimension": "Green Commute",
+    "participants": "1119",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel2",
+    "dimension": "Recycling",
+    "participants": "500000",
+    "date": "2019-08-14",
+"title":"poll 1"
+},{
+    "name": "Channel3",
+   "dimension": "Green Commute",
+    "participants": "67890",
+    "date": "2019-08-12",
+"title":"poll 1"
+},{
+    "name": "Channel4",
+    "dimension": "Equality",
+    "participants": "3456",
+    "date": "2019-08-26"
+  }
+]

@@ -1,0 +1,160 @@
+<div class="row">
+  <div class="col-md-12 col-xl-6">
+    <div class="card">
+      <div class="card-block">
+        <div class="dt-responsive">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div>
+                <label class="label-control">Show
+                  <select class="form-control input-sm full-data-show-entry" [(ngModel)]="rowsOnPage">
+                    <option [ngValue]="10">10</option>
+                    <option [ngValue]="25">25</option>
+                    <option [ngValue]="50">50</option>
+                    <option [ngValue]="100">100</option>
+                  </select>
+                  entries
+                </label>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8">
+              <div style="text-align: right;">
+                <label>Search:
+                  <input type="search" [(ngModel)]="filterQuery" class="form-control input-sm full-data-search"
+                    placeholder="Search name">
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="panel-heading">User information</div>-->
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered full-data-table"
+              [mfData]="users | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage"
+              [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
+              <thead>
+                <tr>
+                  <th>
+                    <mfDefaultSorter by="name">Name</mfDefaultSorter>
+                  </th>
+                  <th>
+                    <mfDefaultSorter by="age">Age</mfDefaultSorter>
+                  </th>
+                  <th>
+                    <mfDefaultSorter by="gender">Gender</mfDefaultSorter>
+                  </th>
+                  <th>
+                    <mfDefaultSorter by="nationality">Nationality</mfDefaultSorter>
+                  </th>
+                  <th>
+                    <mfDefaultSorter by="active">Active</mfDefaultSorter>
+                  </th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of mf.data">
+                  <td> <a [routerLink]="['/','user','profile']" [queryParams]="{id: item.name}">{{item.name}}</a></td>
+                  <td>{{item.age}}</td>
+                  <td>{{item.gender}}</td>
+                  <td>{{item.nationality}}</td>
+                  <td>{{item.active}} days</td>
+                  <td><a title="Inactive" class="btn btn-primary btn-sm"
+                      style="font-size:12px; color: #fff;font-size: 12px;padding:4px 8px;"><i class="ti-na"
+                        style="margin-right:0px;"></i></a>&nbsp; <a title="Remove" class="btn btn-danger btn-sm"
+                      style="font-size:12px; color: #fff;font-size: 12px;padding:4px 8px;"><i class="ti-trash"
+                        style="margin-right:0px;"></i></a></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Nationality</th>
+                  <th>Active</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <mfBootstrapPaginator class="pagination-main f-right"></mfBootstrapPaginator>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 col-xl-6">
+    <!-- table card start -->
+    <div class="card table-card">
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-6 card-block-big br">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-like text-success"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>2000</h5>
+                <span>Claps</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 card-block-big">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-light-bulb text-danger"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>3000</h5>
+                <span>Thoughts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="row-table">
+          <div class="col-sm-6 card-block-big br">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-comment text-info"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>100</h5>
+                <span>Comments</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 card-block-big">
+            <div class="row">
+              <div class="col-sm-4">
+                <i class="icofont icofont-share-alt text-warning"></i>
+              </div>
+              <div class="col-sm-8 text-center">
+                <h5>300</h5>
+                <span>Shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <div class="card-header">
+        <app-filter [page]="'activitygraph'" [hidedimension]="true"></app-filter>
+      </div>
+      <div class="card-block">
+        <div id="morris-extra-area" style="width:100%"></div>
+      </div>
+    </div> -->
+    <!-- table card end -->
+  </div>
+
+</div>

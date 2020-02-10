@@ -1,0 +1,39 @@
+{
+
+"graphdata":[{
+          period: 1566345600000,
+          likes: 0,
+          comments: 0,
+          shares: 0
+        }, {
+          period: 1566432000000,
+          likes: 50,
+          comments: 15,
+          shares: 5
+        }, {
+          period: 1566518400000,
+          likes: 20,
+          comments: 50,
+          shares: 65
+        }, {
+          period: 1566604800000,
+          likes: 60,
+          comments: 12,
+          shares: 7
+        }, {
+          period: 1566691200000,
+          likes: 30,
+          comments: 20,
+          shares: 120
+        }, {
+          period: 1566777600000,
+          likes: 25,
+          comments: 80,
+          shares: 40
+        }, {
+          period: 1566864000000,
+          likes: 10,
+          comments: 10,
+          shares: 10
+        }]
+}
